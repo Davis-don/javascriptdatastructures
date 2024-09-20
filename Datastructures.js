@@ -20,9 +20,9 @@ let item = daysOfTheWeek[i];
  
    //Arrays Methods
  //push("item") adds item to an array
-   console.log (daysOfTheWeek.push("newDay"));
+   daysOfTheWeek.push("newDay");
 //pop() removes item in array
- console.log(daysOfTheWeek.pop());
+ daysOfTheWeek.pop();
 //shift() removes new item in beginning if array
 daysOfTheWeek.shift();
 //unshift("item")adds new item at the beginning of an aray
@@ -48,5 +48,46 @@ let joinedArray=array1.concat(array2);
 
  let reverseString=(stringItem)=>{
 let splitedString=stringItem.split("");
-console.log(typeof(splitedString));
+let reversedString=splitedString.reverse();
+return reversedString
  }
+ /////////Objects
+ //Data structure storing data in key value pairs
+ //declaring object
+ const student={
+  fName:"Davis",
+  lName:"Ikou",
+  age:22,
+  course:"BSC Mathematics & Computer Science",
+  year:"2020",
+  displayFullNames:function display(){
+    return this.fName + " " + this.lName;
+  }
+ };
+ //accessing 
+ //1 dot operator
+ const fullNames= student.fName + " " + student.lName;
+ //bracket notation
+ const fullNames1= student['fName'] + student['lName'];
+  //methods
+  //1:object.keys
+const keys=Object.keys(student);
+//2:object.values
+const values=Object.values(student);
+//3:Entites
+const Entries=Object.entries(student);
+//4object.freeze
+//stops from adding or deleting any property in container
+
+//object.getPropertyName
+const propertyName=Object.getOwnPropertyNames(student);
+
+//objectName.hasOwnPropert
+const proof = student.hasOwnProperty("age");
+//delete objName.property
+delete student.age;
+
+//methods
+let fullNamesThroughFunction= student.displayFullNames;
+
+//NB never use this keyword in method in form of arrow function
