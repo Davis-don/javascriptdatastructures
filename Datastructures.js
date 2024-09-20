@@ -91,3 +91,45 @@ delete student.age;
 let fullNamesThroughFunction= student.displayFullNames;
 
 //NB never use this keyword in method in form of arrow function
+
+////strings
+//characters enclosed in single quotes or double quotes
+ const username="Davis Mugo"
+ //Methods
+ //1:charAt
+ let positionOfChar=username.charAt(6);
+//2:concat
+let other="My name is" + " ";
+let fullSentence= other.concat(username);
+//3:Indexof
+let position1=fullSentence.indexOf("D");
+//4:lastIndexOf
+//RETURNS LAST position of text/string specified
+//5:replace
+let newString=fullSentence.replace("Davis","Annisia");
+//6:replaceAll()
+//replaces all items specified 
+//7:split("specify_separator")
+let arrayItems=fullSentence.split("i");
+//8:toLowerCase
+let lowerCaseItems=fullSentence.toLowerCase();
+//8:toUpepr Case
+let upperCaseItems=fullSentence.toUpperCase();
+//9trim() removes white spaces
+let testItemTrim="   helooo Davis";
+let newTestItemTrim=testItemTrim.trim();
+//10:endswith()
+let testItemendswith="Helooo Davis";
+let valreturned= testItemendswith.endsWith('s');
+
+  //11:startsWith
+   let valreturned2=testItemendswith.startsWith('H');
+   
+
+//12:includes
+let valreturned3=testItemendswith.includes('anisia');
+
+//13:seach
+let val4=testItemendswith.search('a');
+
+/////sets
