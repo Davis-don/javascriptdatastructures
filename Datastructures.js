@@ -133,3 +133,16 @@ let valreturned3=testItemendswith.includes('anisia');
 let val4=testItemendswith.search('a');
 
 /////sets
+//datastructure containing unique elements
+//initialise1
+const mySet=new Set([1,2,3,4,5,6,1,2,3,4])
+//initialise2 empty set
+const myset2=new Set();
+
+//methods
+//1:add(value)
+//2:delete(value)
+//3:has()
+//4:clear()
+//5:size();
+
